@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÉVOQUE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>ÉVOQUE</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="men.html">Men</a>
+      <a href="women.html">Women</a>
+      <a href="kid.html">Kids</a>
+      <a href="sales.html">Sale</a>
+      <a href="new.html">New</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">About</a>
+      <a href="joinus.html">Join Us</a>
+      <a href="sign up.html">Sign Up</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="bk4.mp4" type="video/mp4">
+
+    </video>
+    <h2>BOLD , ELEGANT , DANGEROUS .</h2>
+  </section>
+
+  <section class="product-section">
+    <center>
+      <h2>TOP PICK FOR WOMENS</h2>
+    </center>
+    <div class="products">
+      <div class="product-card">
+        <img src="woman/CHIC.JPG" onclick="openLightbox(this.src)">
+        <h4>Chic Jacket</h4>
+        <p>Stay warm in style this season.</p>
+      </div>
+      <div class="product-card">
+        <span class="badge-sale">-40%</span>
+        <img src="woman/DRESS.JPG" onclick="openLightbox(this.src)">
+        <h4>Summer Dress</h4>
+        <p>Light, breezy and full of charm.</p>
+      </div>
+      <div class="product-card">
+        <img src="woman/PANTS.JPG" onclick="openLightbox(this.src)">
+        <h4>High-Waist Pants</h4>
+        <p>Modern cuts that flatter every shape.</p>
+      </div>
+      <div class="product-card">
+        <span class="badge-sale">-40%</span>
+        <img src="woman/SNEAKER.JPG" onclick="openLightbox(this.src)">
+        <h4>Everyday Sneakers</h4>
+        <p>Comfort and fashion in one step.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="product2.html" class="see-more-btn">See More</a>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Popup image">
+  </div>
+
+  <footer>
+    <div
+      style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; gap: 10px;">
+        <img src="footer/ig.png" height="40" width="40" alt="Instagram">
+        <img src="footer/fb.png" height="40" width="40" alt="Facebook">
+      </div>
+      <p style="flex: 1; text-align: center;">&copy; 2025 ÉVOQUE. All rights reserved.</p>
+      <div>
+        <!-- Add something here if needed -->
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
